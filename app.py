@@ -36,8 +36,11 @@ def extrair_insights(url):
     doc = nlp(texto_unico)
     entidades = [ent.text for ent in doc.ents]
 
+    # Stopwords em português via spaCy
+    stop_words_pt = list(nlp.Defaults.stop_words)
+
     # TF-IDF para palavras-chave
-    vectorizer = TfidfVectorizer(stop_words="portuguese", max_features=10)
+    vectorizer = TfidfVectorizer(stop_words=stop_words_pt, max_features=10)
     tfidf_matrix = vectorizer.fit_transform([texto_unico])
     palavras_chave = vectorizer.get_feature_names_out()
 
@@ -49,7 +52,7 @@ def extrair_insights(url):
     })
 
 # Interface Streamlit
-st.title("Coletor Automático de Insights (sem API de IA) → Excel")
+st.title("Web2Excel Insights")
 
 urls = st.text_area("Cole aqui as URLs (uma por linha)").splitlines()
 

@@ -42,7 +42,8 @@ Clique em Coletar Insights.
 
 O sistema mostrará os resultados e salvará em insights.xlsx.
 
-📂 Estrutura do Projeto
+📂 Estrutura do Projeto:
+
 Código
 web2excel-insights/
 │── app.py              # Código principal do sistema
