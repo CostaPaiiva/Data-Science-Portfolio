@@ -15,21 +15,30 @@ def extrair_insights(url):
     except Exception as e:
         return pd.DataFrame({
             "URL": [url],
-            "Texto Original": ["Erro ao acessar página: " + str(e)],
+            "Texto Completo": ["Erro ao acessar página: " + str(e)],
             "Palavras-chave": [""],
-            "Entidades": [""]
+            "Entidades": [""],
+            "Top Palavras Frequentes": [""]
         })
 
     soup = BeautifulSoup(response.text, "html.parser")
+
+    # Capturar vários elementos da página
     textos = [p.get_text() for p in soup.find_all("p")]
-    texto_unico = " ".join(textos)
+    titulos = [h.get_text() for h in soup.find_all(["h1","h2","h3"])]
+    listas = [li.get_text() for li in soup.find_all("li")]
+    tabelas = [row.get_text() for row in soup.find_all("tr")]
+
+    # Unir tudo em um texto único
+    texto_unico = " ".join(textos + titulos + listas + tabelas)
 
     if not texto_unico.strip():
         return pd.DataFrame({
             "URL": [url],
-            "Texto Original": ["Nenhum texto encontrado."],
+            "Texto Completo": ["Nenhum texto encontrado."],
             "Palavras-chave": [""],
-            "Entidades": [""]
+            "Entidades": [""],
+            "Top Palavras Frequentes": [""]
         })
 
     # Extrair entidades com spaCy
@@ -39,16 +48,21 @@ def extrair_insights(url):
     # Stopwords em português via spaCy
     stop_words_pt = list(nlp.Defaults.stop_words)
 
-    # TF-IDF para palavras-chave
-    vectorizer = TfidfVectorizer(stop_words=stop_words_pt, max_features=10)
+    # Palavras-chave com TF-IDF
+    vectorizer = TfidfVectorizer(stop_words=stop_words_pt, max_features=15)
     tfidf_matrix = vectorizer.fit_transform([texto_unico])
     palavras_chave = vectorizer.get_feature_names_out()
 
+    # Frequência simples das palavras
+    palavras = [w.lower() for w in texto_unico.split() if w.isalpha()]
+    freq = pd.Series(palavras).value_counts().head(10)
+
     return pd.DataFrame({
         "URL": [url],
-        "Texto Original": [texto_unico[:500]],  # limitar tamanho para não ficar gigante
+        "Texto Completo": [texto_unico],
         "Palavras-chave": [", ".join(palavras_chave)],
-        "Entidades": [", ".join(entidades)]
+        "Entidades": [", ".join(entidades)],
+        "Top Palavras Frequentes": [", ".join(freq.index)]
     })
 
 # Interface Streamlit
