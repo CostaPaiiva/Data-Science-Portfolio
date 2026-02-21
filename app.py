@@ -183,10 +183,22 @@ def extrair_insights(url):
         "Leitura (min)": [leitura_min]
     })
 
-# Interface Streamlit
+# ---------------- UI ----------------
 st.title("Web2Excel Insights")
 
-urls = st.text_area("Cole aqui as URLs (uma por linha)").splitlines()
+# Inicializa estado
+if "urls_text" not in st.session_state:
+    st.session_state.urls_text = ""
+if "all_data" not in st.session_state:
+    st.session_state.all_data = pd.DataFrame()
+
+# Mantém o texto das URLs mesmo após rerun
+st.session_state.urls_text = st.text_area(
+    "Cole aqui as URLs (uma por linha)",
+    value=st.session_state.urls_text
+)
+
+urls = st.session_state.urls_text.splitlines()
 
 if st.button("Coletar Insights"):
     all_data = pd.DataFrame()
@@ -196,31 +208,36 @@ if st.button("Coletar Insights"):
             df = extrair_insights(url.strip())
             all_data = pd.concat([all_data, df], ignore_index=True)
 
-    if not all_data.empty:
-        st.write(all_data)
+    # Salva no session_state para persistir após downloads/rerun
+    st.session_state.all_data = all_data
 
-        # --------- DOWNLOAD CSV (opção) ----------
-        csv_data = all_data.to_csv(index=False).encode("utf-8-sig")  # melhor pro Excel BR
-        st.download_button(
-            label="📥 Baixar CSV",
-            data=csv_data,
-            file_name="insights.csv",
-            mime="text/csv"
-        )
+# Renderiza resultados sempre que existirem (mesmo após clicar download)
+if not st.session_state.all_data.empty:
+    st.write(st.session_state.all_data)
 
-        # --------- DOWNLOAD EXCEL (opção) ----------
-        output = BytesIO()
-        with pd.ExcelWriter(output, engine="openpyxl") as writer:
-            all_data.to_excel(writer, index=False, sheet_name="Insights")
-        output.seek(0)
+    # --------- DOWNLOAD CSV (opção) ----------
+    csv_data = st.session_state.all_data.to_csv(index=False).encode("utf-8-sig")
+    st.download_button(
+        label="📥 Baixar CSV",
+        data=csv_data,
+        file_name="insights.csv",
+        mime="text/csv"
+    )
 
-        st.download_button(
-            label="📥 Baixar Excel",
-            data=output,
-            file_name="insights.xlsx",
-            mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
-        )
+    # --------- DOWNLOAD EXCEL (opção) ----------
+    output = BytesIO()
+    with pd.ExcelWriter(output, engine="openpyxl") as writer:
+        st.session_state.all_data.to_excel(writer, index=False, sheet_name="Insights")
+    output.seek(0)
 
-        st.success("Arquivo(s) pronto(s) para download!")
-    else:
-        st.warning("Nenhuma URL válida foi fornecida.")
+    st.download_button(
+        label="📥 Baixar Excel",
+        data=output,
+        file_name="insights.xlsx",
+        mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+    )
+
+    st.success("Arquivo(s) pronto(s) para download!")
+
+else:
+    st.info("Cole as URLs e clique em **Coletar Insights**.")
