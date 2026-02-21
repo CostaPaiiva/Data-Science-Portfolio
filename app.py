@@ -4,6 +4,7 @@ from bs4 import BeautifulSoup
 import pandas as pd
 import spacy
 from sklearn.feature_extraction.text import TfidfVectorizer
+from io import BytesIO  # <<< ADICIONADO
 
 # Carregar modelo spaCy local (precisa instalar: python -m spacy download pt_core_news_sm)
 nlp = spacy.load("pt_core_news_sm")
@@ -79,7 +80,20 @@ if st.button("Coletar Insights"):
 
     if not all_data.empty:
         st.write(all_data)
-        all_data.to_excel("insights.xlsx", index=False)
-        st.success("Arquivo insights.xlsx gerado com sucesso!")
+
+        # >>> AO INVÉS DE SALVAR AUTOMATICAMENTE, GERAR EM MEMÓRIA E EXIBIR BOTÃO <<<
+        output = BytesIO()
+        with pd.ExcelWriter(output, engine="openpyxl") as writer:
+            all_data.to_excel(writer, index=False, sheet_name="Insights")
+        output.seek(0)
+
+        st.download_button(
+            label="📥 Baixar insights.xlsx",
+            data=output,
+            file_name="insights.xlsx",
+            mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+        )
+
+        st.success("Arquivo pronto para download!")
     else:
         st.warning("Nenhuma URL válida foi fornecida.")
