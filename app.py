@@ -192,23 +192,34 @@ if "urls_text" not in st.session_state:
 if "all_data" not in st.session_state:
     st.session_state.all_data = pd.DataFrame()
 
-# Mantém o texto das URLs mesmo após rerun
+# Input das URLs (persistente)
 st.session_state.urls_text = st.text_area(
     "Cole aqui as URLs (uma por linha)",
     value=st.session_state.urls_text
 )
-
 urls = st.session_state.urls_text.splitlines()
 
-if st.button("Coletar Insights"):
-    all_data = pd.DataFrame()
+# Botões lado a lado (Coletar / Limpar)
+col1, col2 = st.columns(2)
 
+with col1:
+    coletar = st.button("Coletar Insights", use_container_width=True)
+
+with col2:
+    limpar = st.button("🧹 Limpar resultados", use_container_width=True)
+
+if limpar:
+    st.session_state.all_data = pd.DataFrame()
+    # Se quiser limpar também as URLs, descomente a linha abaixo:
+    # st.session_state.urls_text = ""
+    st.rerun()
+
+if coletar:
+    all_data = pd.DataFrame()
     for url in urls:
         if url.strip():
             df = extrair_insights(url.strip())
             all_data = pd.concat([all_data, df], ignore_index=True)
-
-    # Salva no session_state para persistir após downloads/rerun
     st.session_state.all_data = all_data
 
 # Renderiza resultados sempre que existirem (mesmo após clicar download)
@@ -238,6 +249,5 @@ if not st.session_state.all_data.empty:
     )
 
     st.success("Arquivo(s) pronto(s) para download!")
-
 else:
     st.info("Cole as URLs e clique em **Coletar Insights**.")
