@@ -1,6 +1,6 @@
 📊 Data Science Projects
 
-
+```text
 🚀 Sobre o Repositório
 
 Este repositório reúne meus projetos práticos nas áreas de Ciência de Dados, Análise de Dados, Machine Learning, Inteligência Artificial, Visão Computacional, Processamento de Dados e Automação com Python.
@@ -45,7 +45,6 @@ Desenvolvimento de Soluções com Python
 
 Os projetos foram organizados por nível de complexidade, facilitando a navegação e a análise do portfólio.
 
-```text
 Data-Science-Projects/
 ├── A-Projetos-basicos/
 │   ├── FabricadeModelosML/
@@ -63,7 +62,7 @@ Data-Science-Projects/
 │   └── Em breve...
 │
 └── README.md
-```
+
 📁 Organização por Nível
 
 🟢 Projetos Básicos
