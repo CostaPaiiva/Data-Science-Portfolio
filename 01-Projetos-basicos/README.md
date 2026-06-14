@@ -22,7 +22,8 @@ Estruturar projetos de forma clara e profissional.
 Mesmo sendo classificados como básicos, os projetos desta pasta foram organizados com foco em boas práticas, documentação e aplicabilidade real.
 
 🗂️ Projetos Incluídos
-Basicos/
+'''text
+Projetos-basicos/
 │
 ├── FabricadeModelosML/
 ├── FastVision/
@@ -31,6 +32,7 @@ Basicos/
 ├── Visao_computacional/
 ├── Web2Excel_Insights/
 └── WebSentix/
+'''
 
 ⭐ Visão Geral dos Projetos
 🏭 FabricadeModelosML

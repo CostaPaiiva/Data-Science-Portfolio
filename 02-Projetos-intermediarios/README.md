@@ -20,10 +20,13 @@ Treinar e comparar modelos;
 Avaliar resultados com métricas;
 Estruturar projetos para facilitar manutenção e evolução;
 Aplicar Python em soluções mais próximas de cenários reais.
+
 🗂️ Projetos Incluídos
-Intermediarios/
+'''text
+Projetos-intermediarios/
 │
 └── AutoML/
+'''
 ⭐ Projeto em Destaque
 🤖 AutoML
 
@@ -43,6 +46,7 @@ Avaliação de desempenho;
 Organização de código em módulos;
 Criação de fluxos reutilizáveis;
 Aplicação prática de Python em problemas de dados.
+
 🔄 Fluxo Geral de Trabalho
 
 O projeto AutoML segue uma lógica de trabalho voltada para facilitar a experimentação com modelos de Machine Learning.
@@ -78,6 +82,7 @@ Reutilização de funções;
 Estruturação de fluxos de trabalho;
 Documentação técnica;
 Versionamento com Git.
+
 📌 Competências Demonstradas
 
 Os projetos intermediários demonstram competências práticas importantes para evolução na área de dados, como:
@@ -90,6 +95,7 @@ Organização de arquivos e responsabilidades;
 Análise de resultados;
 Automação de tarefas repetitivas;
 Estruturação de projetos para portfólio profissional.
+
 🧩 Como Navegar
 
 Cada pasta dentro de Intermediarios representa um projeto independente.
@@ -110,6 +116,7 @@ Refatoração de códigos;
 Inclusão de exemplos de uso;
 Criação de fluxos mais completos;
 Organização de resultados e métricas.
+
 🔄 Status
 
 🚧 Pasta em constante evolução.
