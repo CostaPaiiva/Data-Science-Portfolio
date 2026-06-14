@@ -41,13 +41,13 @@ Análise de Texto
 Extração de Informações
 Desenvolvimento de Soluções com Python
 
-🗂️ Estrutura do Repositório
+## 📁 Estrutura do Repositório
 
 Os projetos foram organizados por nível de complexidade, facilitando a navegação e a análise do portfólio.
 
+```text
 Data-Science-Projects/
-│
-├── Basicos/
+├── A-Projetos-basicos/
 │   ├── FabricadeModelosML/
 │   ├── FastVision/
 │   ├── InsightMind/
@@ -56,13 +56,14 @@ Data-Science-Projects/
 │   ├── Web2Excel_Insights/
 │   └── WebSentix/
 │
-├── Intermediarios/
+├── B-Projetos-intermediarios/
 │   └── AutoML/
 │
-├── Avancados/
+├── C-Projetos-avancados/
 │   └── Em breve...
 │
 └── README.md
+
 📁 Organização por Nível
 
 🟢 Projetos Básicos

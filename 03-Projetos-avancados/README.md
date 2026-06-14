@@ -21,6 +21,7 @@ Criar dashboards e visualizações analíticas;
 Organizar projetos com foco em manutenção;
 Preparar soluções para apresentação profissional;
 Documentar processos, decisões técnicas e resultados.
+
 🗂️ Estrutura da Pasta
 Avancados/
 │
@@ -46,6 +47,7 @@ Sistemas de recomendação;
 Análise de séries temporais;
 Classificação, regressão e clusterização em cenários reais;
 Projetos com documentação técnica detalhada.
+
 🛠️ Tecnologias Previstas
 
 Os projetos avançados poderão utilizar tecnologias e ferramentas como:
