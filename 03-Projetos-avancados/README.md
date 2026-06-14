@@ -23,10 +23,11 @@ Preparar soluções para apresentação profissional;
 Documentar processos, decisões técnicas e resultados.
 
 🗂️ Estrutura da Pasta
-Avancados/
+```text
+Projetos-avancados/
 │
 └── Em breve...
-
+```
 No momento, esta pasta está reservada para projetos futuros de maior complexidade.
 
 🚀 Tipos de Projetos Planejados

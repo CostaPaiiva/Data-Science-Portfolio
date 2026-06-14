@@ -22,11 +22,11 @@ Estruturar projetos para facilitar manutenção e evolução;
 Aplicar Python em soluções mais próximas de cenários reais.
 
 🗂️ Projetos Incluídos
-'''text
+```text
 Projetos-intermediarios/
 │
 └── AutoML/
-'''
+```
 ⭐ Projeto em Destaque
 🤖 AutoML
 
