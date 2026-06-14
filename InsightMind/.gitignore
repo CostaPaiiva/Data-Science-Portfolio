@@ -1,0 +1,10 @@
+venv/
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+.streamlit/secrets.toml
+*.html
+*.pdf
+# Logs e arquivos temporários 
+*.log *.tmp *.swp
