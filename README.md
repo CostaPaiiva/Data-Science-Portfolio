@@ -1,7 +1,6 @@
 📊 Data Science Projects
 
-```text
-🚀 Sobre o Repositório
+##🚀 Sobre o Repositório
 
 Este repositório reúne meus projetos práticos nas áreas de Ciência de Dados, Análise de Dados, Machine Learning, Inteligência Artificial, Visão Computacional, Processamento de Dados e Automação com Python.
 
@@ -9,7 +8,7 @@ O objetivo deste portfólio é apresentar minha evolução técnica por meio de 
 
 Este repositório também funciona como uma vitrine profissional, permitindo que recrutadores, avaliadores técnicos e outros profissionais conheçam minhas habilidades, minha forma de organizar projetos e minha capacidade de aplicar tecnologia em cenários reais.
 
-🎯 Objetivo do Portfólio
+##🎯 Objetivo do Portfólio
 
 O principal objetivo deste portfólio é demonstrar, de forma prática, minhas competências em dados e inteligência artificial.
 
@@ -26,7 +25,7 @@ Criar soluções orientadas a dados;
 Documentar projetos de forma clara e profissional;
 Organizar um portfólio técnico para apresentação no GitHub.
 
-🧠 Áreas de Estudo e Aplicação
+##🧠 Áreas de Estudo e Aplicação
 
 Os projetos deste repositório estão relacionados principalmente às seguintes áreas:
 
@@ -44,7 +43,7 @@ Desenvolvimento de Soluções com Python
 ## 📁 Estrutura do Repositório
 
 Os projetos foram organizados por nível de complexidade, facilitando a navegação e a análise do portfólio.
-
+```text
 Data-Science-Projects/
 ├── A-Projetos-basicos/
 │   ├── FabricadeModelosML/
@@ -62,7 +61,7 @@ Data-Science-Projects/
 │   └── Em breve...
 │
 └── README.md
-
+```
 📁 Organização por Nível
 
 🟢 Projetos Básicos
@@ -97,7 +96,7 @@ A pasta Avancados está reservada para projetos mais robustos, envolvendo aplica
 
 Esta seção será atualizada futuramente com projetos de maior complexidade técnica.
 
-🛠️ Tecnologias e Ferramentas
+##🛠️ Tecnologias e Ferramentas
 
 As principais tecnologias utilizadas nos projetos incluem:
 
@@ -114,7 +113,7 @@ Organização de arquivos e dados;
 Documentação técnica;
 Versionamento com Git.
 
-📌 Competências Demonstradas
+##📌 Competências Demonstradas
 
 Este portfólio demonstra competências práticas importantes para atuação em projetos de dados e tecnologia, como:
 
@@ -133,7 +132,7 @@ Análise de textos;
 Extração de informações;
 Desenvolvimento de soluções orientadas a dados.
 
-🧩 Como Navegar pelo Repositório
+##🧩 Como Navegar pelo Repositório
 
 Para explorar os projetos, escolha uma das pastas principais:
 
@@ -145,13 +144,13 @@ Avancados: projetos futuros de maior complexidade.
 
 Cada projeto possui sua própria estrutura de arquivos, códigos e documentação específica. A ideia é que cada pasta funcione como um projeto independente dentro de um portfólio maior.
 
-📈 Evolução Técnica
+##📈 Evolução Técnica
 
 Este repositório representa minha jornada de aprendizado e prática em Ciência de Dados, Análise de Dados, Machine Learning e Inteligência Artificial.
 
 A organização por níveis permite acompanhar minha evolução desde projetos mais simples até soluções mais completas. Ao longo do tempo, este portfólio será atualizado com novos projetos, melhorias nos códigos, documentação mais detalhada e aplicações mais avançadas.
 
-👨‍💻 Sobre Mim
+##👨‍💻 Sobre Mim
 
 Sou desenvolvedor e profissional em formação na área de tecnologia, com foco em soluções baseadas em dados, inteligência artificial, automação e desenvolvimento de software.
 
@@ -167,18 +166,18 @@ Inteligência Artificial;
 Automação com Python;
 Desenvolvimento de Software.
 
-🎯 Objetivo Profissional
+##🎯 Objetivo Profissional
 
 Meu objetivo é atuar em projetos que envolvam dados, inteligência artificial, automação e desenvolvimento de soluções tecnológicas.
 
 Busco oportunidades onde eu possa aplicar meus conhecimentos, continuar evoluindo tecnicamente e contribuir com soluções que transformem dados em informação, informação em insight e insight em tomada de decisão.
 
-📫 Contato
+##📫 Contato
 GitHub: CostaPaiiva
 Portfólio: em desenvolvimento
 LinkedIn: em breve
 🔄 Status do Repositório
 
-🚧 Repositório em constante evolução.
+##🚧 Repositório em constante evolução.
 
 Novos projetos, melhorias de documentação, refatorações e aplicações mais avançadas serão adicionados progressivamente.
