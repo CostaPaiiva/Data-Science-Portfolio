@@ -1,77 +1,33 @@
-# 🌸 Clusterização de Flores Iris com K-Means
+# Clusterizacao de Flores Iris com K-Means
 
-## 📌 Descrição do Projeto
+Notebook de estudo para agrupamento nao supervisionado usando K-Means na base Iris.
 
-Este projeto tem como objetivo aplicar o algoritmo **K-Means** para realizar a **clusterização do famoso dataset Iris**, que contém medidas de flores de três espécies diferentes:
+## Arquivos
 
-- Iris-setosa
-- Iris-versicolor
-- Iris-virginica
+```text
+5-Clusterizacao_Flores_Iris_K-Means/
+|-- K-Means Iris.ipynb
+|-- iris.csv
+|-- iris-data-set.png
+`-- README.md
+```
 
-O objetivo é verificar se o algoritmo consegue **agrupar as flores automaticamente** apenas com base nas características numéricas, sem usar os rótulos das espécies.
+## Objetivo
 
----
+- Carregar a base Iris.
+- Explorar atributos numericos.
+- Aplicar K-Means.
+- Visualizar grupos formados.
+- Comparar clusters com classes reais quando disponiveis.
 
-## 📊 Sobre o Dataset
+## Como executar
 
-O dataset contém as seguintes colunas:
+1. Abra `K-Means Iris.ipynb`.
+2. Execute as celulas em ordem.
+3. Confirme que `iris.csv` esta na mesma pasta.
 
-- SepalLength → Comprimento da sépala
-- SepalWidth → Largura da sépala
-- PetalLength → Comprimento da pétala
-- PetalWidth → Largura da pétala
-- Species → Espécie da flor (usada apenas para validação)
+## Dependencias comuns
 
-Exemplo dos dados:
-
-| SepalLength | SepalWidth | PetalLength | PetalWidth | Species |
-|------------|------------|-------------|------------|----------|
-| 5.1 | 3.5 | 1.4 | 0.2 | Iris-setosa |
-
----
-
-## 🧠 O que foi feito no projeto
-
-- Análise exploratória dos dados
-- Limpeza e verificação de valores nulos
-- Seleção apenas das colunas numéricas
-- Normalização dos dados
-- Aplicação do método do cotovelo (Elbow Method)
-- Cálculo do Silhouette Score
-- Treinamento do modelo K-Means
-- Visualização dos clusters
-- Comparação dos clusters com as espécies reais
-
----
-
-## 🛠️ Tecnologias Utilizadas
-
-- Python
-- Pandas
-- NumPy
-- Scikit-Learn
-- Matplotlib
-- Jupyter Notebook
-
----
-
-
----
-
-## 📈 Resultados
-
-O modelo conseguiu separar os dados em **3 clusters**, que correspondem de forma muito próxima às três espécies reais de flores, mostrando a eficiência do K-Means para este tipo de problema.
-
-Também foi utilizada uma **tabela de contingência (crosstab)** para comparar:
-
-- Espécies reais
-- Clusters gerados pelo modelo
-
----
-
-## 🎯 Conclusão
-
-Este projeto demonstra como o **K-Means pode ser usado para descobrir padrões e grupos em dados sem rótulos**, sendo uma técnica poderosa de aprendizado não supervisionado.
-
----
-
+```bash
+python -m pip install pandas numpy scikit-learn matplotlib seaborn
+```

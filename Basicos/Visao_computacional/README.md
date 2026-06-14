@@ -1,8 +1,12 @@
-﻿# Visão Computacional
+# Visao Computacional
 
-Esta pasta reúne projetos relacionados a visão computacional, detecção de faces, processamento de imagens e aplicações com inteligência artificial.
+Pasta reservada para projetos basicos de visao computacional.
 
-## Projetos
+No momento, o projeto funcional de visao computacional desta camada esta em `../FastVision`.
 
-- Projeto 02 Face Detection
+## Sugestao de organizacao
 
+- `datasets/`: amostras pequenas para testes locais.
+- `notebooks/`: experimentos em Jupyter.
+- `src/`: scripts reutilizaveis.
+- `README.md`: descricao do projeto quando houver implementacao.

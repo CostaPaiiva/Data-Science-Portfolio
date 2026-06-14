@@ -1,30 +1,31 @@
-🌳 Classificação de Flores Iris com Árvore de Decisão
+# Arvore de Decisao com Flores Iris
 
--Este projeto implementa um modelo de Machine Learning usando Árvore de Decisão para classificar flores do famoso dataset Iris em três categorias:
+Notebook de estudo para classificacao da base Iris usando arvore de decisao.
 
-🌸 Setosa
+## Arquivos
 
-🌼 Versicolor
+```text
+7-Arvore_decisao_flores_iris/
+|-- Arvore-decisao.ipynb
+|-- imagens/
+`-- README.md
+```
 
-🌺 Virginica
+## Objetivo
 
--A classificação é feita com base em características físicas das flores, principalmente relacionadas às pétalas e sépalas.
+- Carregar a base Iris.
+- Treinar uma arvore de decisao.
+- Avaliar acuracia e matriz de confusao.
+- Visualizar conceitos como profundidade, divisao e criterios.
 
--O projeto foi desenvolvido em Python utilizando Scikit-learn e executado em Jupyter Notebook / VS Code.
+## Como executar
 
-🧪 O que o Projeto Faz:
+1. Abra `Arvore-decisao.ipynb`.
+2. Execute as celulas em ordem.
+3. Verifique se as imagens de apoio continuam na pasta `imagens/`.
 
-O notebook executa as seguintes etapas:
-Carrega o dataset Iris
-Realiza análise exploratória dos dados
-Separa dados de treino e teste
-Treina um modelo de Árvore de Decisão
-Faz previsões
-Plota o gráfico de regiões de decisão 
-Visualiza o comportamento do classificador
+## Dependencias comuns
 
-📈 Resultados
-
-- O modelo apresenta excelente desempenho para este dataset, conseguindo separar claramente as três classes, principalmente usando as características das pétalas.
-
-- O gráfico mostra visualmente como a Árvore de Decisão cria regiões de separação no espaço dos dados.
+```bash
+python -m pip install pandas numpy scikit-learn matplotlib seaborn
+```

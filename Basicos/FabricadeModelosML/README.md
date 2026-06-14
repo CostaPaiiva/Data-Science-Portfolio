@@ -1,147 +1,79 @@
+# Fabrica de Modelos ML
 
-Sistema completo em Python com interface (Streamlit) para:
-- Upload de CSV
-- Limpeza e tratamento automático
-- Detecção de tarefa (Classificação ou Regressão)
-- Treino com 30+ modelos (PyCaret) + ranking do melhor ao pior
-- Validação CV vs Holdout + alerta de overfitting
-- Explicabilidade (SHAP quando possível + fallback feature importance)
-- Exportar relatório final em PDF
-- Salvar e baixar o pipeline+modelo (.pkl) para deploy
-- Deploy separado com probabilidades (classificação) e download de CSV
+Sistema Streamlit para treinar modelos de Machine Learning a partir de CSV usando PyCaret.
 
----
+## O que faz
 
-## 1) Estrutura do projeto
+- Upload de CSV.
+- Limpeza basica de dados.
+- Sugestao automatica de target.
+- Deteccao de classificacao ou regressao.
+- Comparacao de modelos com PyCaret.
+- Ranking dos melhores modelos.
+- Validacao CV vs holdout.
+- Relatorio PDF.
+- Exportacao do pipeline treinado (`best_model_pipeline.pkl`).
+- App separado para predicoes com `predict_app.py`.
 
+## Estrutura
 
+```text
+FabricadeModelosML/
+|-- app.py
+|-- predict_app.py
+|-- best_model_pipeline.pkl
+|-- README.md
+```
 
-Fabricademodelosml/
-app.py
-predict_app.py
-README.md
+## Requisitos
 
+- Python 3.9 ou 3.10 recomendado para compatibilidade com PyCaret.
+- Pacotes principais: `streamlit`, `pandas`, `numpy`, `matplotlib`, `scikit-learn`, `pycaret`, `reportlab`, `shap`.
 
----
+## Instalacao
 
-## 2) Requisitos
-
-- Python 3.9+ (recomendado)
-- Pacotes: streamlit, pandas, numpy, matplotlib, scikit-learn, pycaret, reportlab, shap
-
----
-
-## 3) Instalação (1 vez)
-
-### 3.1 Criar e ativar ambiente virtual (recomendado)
-
-Windows:
 ```bash
 python -m venv .venv
 .venv\Scripts\activate
+python -m pip install -U pip
+python -m pip install -r requirements.txt
+```
 
+No Linux/macOS:
 
-Linux/Mac:
-
+```bash
 python -m venv .venv
 source .venv/bin/activate
+python -m pip install -U pip
+python -m pip install -r requirements.txt
+```
 
-3.2 Instalar dependências
-pip install -U pip
-pip install streamlit pandas numpy matplotlib scikit-learn pycaret reportlab shap
+## Treinar modelos
 
-4) Rodar o TREINO (AutoML)
+```bash
+python -m streamlit run app.py
+```
 
-Na pasta do projeto:
+Fluxo recomendado:
 
-streamlit run app.py
+1. Envie um CSV.
+2. Confirme ou ajuste o target.
+3. Mantenha o Hard Mode ligado para maior robustez.
+4. Clique em `Rodar AutoML agora`.
+5. Baixe o PDF e o modelo `best_model_pipeline.pkl`.
 
-Checklist no app
+## Rodar predicoes
 
-Faça upload do CSV
+Depois de gerar ou informar um modelo `.pkl`:
 
-Confirme/ajuste o target (o app sugere automaticamente)
+```bash
+python -m streamlit run predict_app.py
+```
 
-(Recomendado) Deixe Hard Mode ligado
+O app aceita um CSV novo e gera um arquivo `predicoes.csv`.
 
-Clique em Rodar AutoML agora
+## Observacoes
 
-Veja o ranking e o dashboard
-
-Baixe:
-
-relatorio_automl.pdf
-
-best_model_pipeline.pkl (modelo + pipeline)
-
-Observação: o arquivo best_model_pipeline.pkl também fica na pasta do projeto.
-
-5) Rodar o DEPLOY (Predição com Probabilidades)
-
-Após gerar o best_model_pipeline.pkl:
-
-streamlit run predict_app.py
-
-Checklist no app
-
-Faça upload do CSV para prever
-
-Use o modelo:
-
-padrão best_model_pipeline.pkl na pasta, ou
-
-faça upload do .pkl pela interface
-
-Clique em Rodar agora
-
-Baixe o arquivo predicoes.csv
-
-Saída no deploy
-
-Classificação:
-
-prediction_label (classe prevista)
-
-prediction_score (score/prob da classe prevista)
-
-Score_<classe> (probabilidade por classe, quando suportado por raw_score=True)
-
-(se binário) opção de threshold e prediction_label_thresholded
-
-Regressão:
-
-prediction_label (valor previsto)
-
-6) Solução de problemas (rápido)
-6.1 Não gerou Score_<classe> no deploy
-
-Alguns modelos/versões podem não expor probabilidades por classe.
-
-Ainda assim prediction_score geralmente aparece.
-
-Para garantir 100% por classe, dá pra usar predict_proba() do estimador interno (ajuste avançado).
-
-6.2 O treino quebra em algum modelo
-
-Ligue o Hard Mode (ele ativa errors="ignore" no compare_models e validações).
-
-Remova colunas com muitos nulos ou textos de alta cardinalidade.
-
-6.3 CSV novo no deploy dá erro
-
-Confirme que o CSV novo tem colunas compatíveis com as do treino.
-
-Evite mudar nomes de colunas/formatos.
-
-7) Fluxo recomendado (melhor prática)
-
-Treinar no app.py com Hard Mode ligado
-
-Baixar o best_model_pipeline.pkl e guardar versão com data (ex.: best_model_pipeline_2026-02-06.pkl)
-
-Usar no predict_app.py para predições e probabilidades
-
-Re-treinar quando entrar dados novos (mensal/quinzenal)
-
-
----
+- O CSV de predicao precisa ter colunas compativeis com as usadas no treino.
+- Alguns modelos ou versoes do PyCaret podem nao expor probabilidades por classe.
+- Se o treino falhar em algum modelo especifico, mantenha `errors="ignore"` pelo Hard Mode e revise colunas com muitos nulos ou alta cardinalidade.

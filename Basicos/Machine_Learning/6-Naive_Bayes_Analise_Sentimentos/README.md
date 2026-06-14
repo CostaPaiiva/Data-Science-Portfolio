@@ -1,44 +1,31 @@
-# 📊 Classificação de Sentimentos com Naive Bayes
+# Analise de Sentimentos com Naive Bayes
 
-Este projeto implementa um **classificador de sentimentos** utilizando **Naive Bayes** e técnicas de **Processamento de Linguagem Natural (NLP)** em Python.
+Projeto de estudo para classificacao de sentimentos com modelo Naive Bayes.
 
-O objetivo é classificar textos (tweets/frases) em categorias como:
+## Arquivos
 
-- ✅ Positivo  
-- ❌ Negativo  
-- ⚪ Neutro  
+```text
+6-Naive_Bayes_Analise_Sentimentos/
+|-- Nayve_Bayes.ipynb
+|-- Tweets_Mg.csv
+`-- README.md
+```
 
----
+## Objetivo
 
-## 🧠 Tecnologias Utilizadas
+- Preparar dados textuais.
+- Criar representacao numerica do texto.
+- Treinar Naive Bayes.
+- Avaliar resultados com metricas de classificacao.
 
-- Python
-- Pandas
-- NumPy
-- Scikit-learn
-- NLTK
+## Como executar
 
----
-🔄 Pipeline do Projeto
+1. Abra `Nayve_Bayes.ipynb`.
+2. Execute as celulas em ordem.
+3. Mantenha `Tweets_Mg.csv` na mesma pasta.
 
-Leitura da base de dados
+## Dependencias comuns
 
-Limpeza e pré-processamento dos textos
-
-Vetorização com Bag of Words / TF-IDF
-
-Separação treino e teste
-
-Treinamento do modelo Naive Bayes
-
-Análise dos resultados
-
-🚀 Objetivo Educacional
-
-Este projeto faz parte do meu portfólio de estudos em Machine Learning e Ciência de Dados, com foco em:
-
-NLP
-
-Classificação de textos
-
-Modelos probabilísticos
+```bash
+python -m pip install pandas numpy scikit-learn matplotlib seaborn nltk
+```
