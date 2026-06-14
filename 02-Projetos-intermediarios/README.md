@@ -4,7 +4,7 @@ Esta pasta reúne projetos de nível intermediário voltados para Ciência de Da
 
 O objetivo desta seção é apresentar projetos com maior organização técnica, mais etapas de desenvolvimento e aplicação prática de conceitos que vão além dos fundamentos básicos.
 
-📌 Objetivo da Pasta
+##📌 Objetivo da Pasta
 
 A pasta Intermediarios foi criada para armazenar projetos que demonstram uma evolução técnica em relação aos projetos básicos.
 
@@ -21,20 +21,20 @@ Avaliar resultados com métricas;
 Estruturar projetos para facilitar manutenção e evolução;
 Aplicar Python em soluções mais próximas de cenários reais.
 
-🗂️ Projetos Incluídos
+##🗂️ Projetos Incluídos
 ```text
 Projetos-intermediarios/
 │
 └── AutoML/
 ```
-⭐ Projeto em Destaque
+##⭐ Projeto em Destaque
 🤖 AutoML
 
 O projeto AutoML tem como objetivo automatizar etapas importantes do processo de Machine Learning, tornando o fluxo de criação de modelos mais simples, rápido e organizado.
 
 A proposta é reduzir tarefas repetitivas durante o desenvolvimento de modelos, permitindo que etapas como preparação dos dados, treinamento, avaliação e comparação de algoritmos sejam executadas de forma mais estruturada.
 
-🧠 O que o projeto AutoML demonstra
+##🧠 O que o projeto AutoML demonstra
 
 Este projeto demonstra conhecimentos práticos em:
 
@@ -47,7 +47,7 @@ Organização de código em módulos;
 Criação de fluxos reutilizáveis;
 Aplicação prática de Python em problemas de dados.
 
-🔄 Fluxo Geral de Trabalho
+##🔄 Fluxo Geral de Trabalho
 
 O projeto AutoML segue uma lógica de trabalho voltada para facilitar a experimentação com modelos de Machine Learning.
 
@@ -63,11 +63,11 @@ Organização dos resultados para análise.
 
 Esse fluxo ajuda a tornar o processo de modelagem mais produtivo, organizado e replicável.
 
-🛠️ Tecnologias Utilizadas
+##🛠️ Tecnologias Utilizadas
 
 As principais tecnologias e ferramentas utilizadas nos projetos desta pasta incluem:
 
-📚 Conceitos Trabalhados
+##📚 Conceitos Trabalhados
 
 Nesta categoria são trabalhados conceitos como:
 
@@ -83,7 +83,7 @@ Estruturação de fluxos de trabalho;
 Documentação técnica;
 Versionamento com Git.
 
-📌 Competências Demonstradas
+##📌 Competências Demonstradas
 
 Os projetos intermediários demonstram competências práticas importantes para evolução na área de dados, como:
 
@@ -96,7 +96,7 @@ Análise de resultados;
 Automação de tarefas repetitivas;
 Estruturação de projetos para portfólio profissional.
 
-🧩 Como Navegar
+##🧩 Como Navegar
 
 Cada pasta dentro de Intermediarios representa um projeto independente.
 
@@ -104,7 +104,7 @@ Para explorar o projeto, acesse a pasta correspondente e consulte seus arquivos,
 
 Recomenda-se analisar primeiro a estrutura geral do projeto e depois observar os arquivos principais responsáveis pelo fluxo de preparação, treinamento e avaliação dos modelos.
 
-🚀 Próximos Passos
+##🚀 Próximos Passos
 
 Esta pasta será expandida com novos projetos intermediários envolvendo aplicações mais completas de dados, automação, análise e inteligência artificial.
 
@@ -119,6 +119,6 @@ Organização de resultados e métricas.
 
 🔄 Status
 
-🚧 Pasta em constante evolução.
+##🚧 Pasta em constante evolução.
 
 Novos projetos e melhorias serão adicionados conforme o portfólio for sendo aprimorado.

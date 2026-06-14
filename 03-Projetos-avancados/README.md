@@ -4,7 +4,7 @@ Esta pasta é destinada aos projetos avançados do meu portfólio de Ciência de
 
 O objetivo desta seção é reunir projetos mais completos, robustos e próximos de cenários reais, demonstrando maior domínio técnico, organização de arquitetura, integração de ferramentas e capacidade de desenvolver soluções com maior nível de complexidade.
 
-📌 Objetivo da Pasta
+##📌 Objetivo da Pasta
 
 A pasta Avancados foi criada para armazenar projetos que representam uma etapa mais madura da minha evolução técnica.
 
@@ -22,7 +22,7 @@ Organizar projetos com foco em manutenção;
 Preparar soluções para apresentação profissional;
 Documentar processos, decisões técnicas e resultados.
 
-🗂️ Estrutura da Pasta
+##🗂️ Estrutura da Pasta
 ```text
 Projetos-avancados/
 │
@@ -30,7 +30,7 @@ Projetos-avancados/
 ```
 No momento, esta pasta está reservada para projetos futuros de maior complexidade.
 
-🚀 Tipos de Projetos Planejados
+##🚀 Tipos de Projetos Planejados
 
 Esta seção poderá incluir projetos como:
 
@@ -49,11 +49,11 @@ Análise de séries temporais;
 Classificação, regressão e clusterização em cenários reais;
 Projetos com documentação técnica detalhada.
 
-🛠️ Tecnologias Previstas
+##🛠️ Tecnologias Previstas
 
 Os projetos avançados poderão utilizar tecnologias e ferramentas como:
 
-📚 Conceitos que Serão Trabalhados
+##📚 Conceitos que Serão Trabalhados
 
 Os projetos avançados terão foco em conceitos como:
 
@@ -73,7 +73,7 @@ Boas práticas de documentação;
 Monitoramento de resultados;
 Estruturação de soluções completas.
 
-📌 Competências Demonstradas
+##📌 Competências Demonstradas
 
 Esta seção será utilizada para demonstrar competências mais avançadas, como:
 
@@ -88,7 +88,7 @@ Preparação de projetos para apresentação técnica;
 Clareza na documentação e explicação das soluções;
 Capacidade de transformar problemas em produtos ou ferramentas funcionais.
 
-🧩 Como Esta Pasta Será Evoluída
+##🧩 Como Esta Pasta Será Evoluída
 
 A pasta Avancados será preenchida progressivamente com projetos mais completos.
 
@@ -105,7 +105,7 @@ Possíveis melhorias futuras.
 
 A ideia é que cada projeto avançado funcione como uma solução independente e bem documentada dentro do portfólio.
 
-🎯 Objetivo Profissional
+##🎯 Objetivo Profissional
 
 Os projetos desta pasta terão como objetivo demonstrar preparo para desafios mais técnicos e próximos do mercado.
 
@@ -113,6 +113,6 @@ Essa seção representa a evolução natural dos projetos básicos e intermediá
 
 🔄 Status
 
-🚧 Pasta em planejamento.
+##🚧 Pasta em planejamento.
 
 Atualmente, esta pasta está reservada para receber projetos avançados futuramente. Novas soluções serão adicionadas conforme o portfólio evoluir.
