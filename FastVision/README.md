@@ -2,6 +2,22 @@
 
 Aplicacao Streamlit para visao computacional local com YOLO e reconhecimento facial com OpenCV.
 
+<p>
+  <img alt="Python" src="https://img.shields.io/badge/Python-3.10%2B-blue">
+  <img alt="Streamlit" src="https://img.shields.io/badge/Streamlit-App-red">
+  <img alt="OpenCV" src="https://img.shields.io/badge/OpenCV-Vision-orange">
+  <img alt="YOLO" src="https://img.shields.io/badge/YOLO-Object%20Detection-success">
+</p>
+
+## At a glance
+
+| Signal | Value |
+|---|---|
+| Focus | Local computer vision and face recognition |
+| Main stack | Streamlit, YOLO, OpenCV, SQLite |
+| Output | Real-time detection and export tools |
+| Strength | Practical CV app with an end-user interface |
+
 ## Funcionalidades
 
 - Deteccao de objetos com YOLO/Ultralytics.

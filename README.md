@@ -4,6 +4,13 @@ Technical portfolio of projects in Data Science, Machine Learning, Artificial In
 
 The repository is organized to make it easy for recruiters and technical reviewers to scan the work, understand the scope of each project, and evaluate the quality of the documentation.
 
+<p>
+  <img alt="Python" src="https://img.shields.io/badge/Python-3.10%2B-blue">
+  <img alt="SQL" src="https://img.shields.io/badge/SQL-Data%20Projects-informational">
+  <img alt="ML" src="https://img.shields.io/badge/Machine%20Learning-Portfolio-orange">
+  <img alt="Streamlit" src="https://img.shields.io/badge/Streamlit-Dashboards-red">
+</p>
+
 ## Overview
 
 | Item | Description |
@@ -12,6 +19,15 @@ The repository is organized to make it easy for recruiters and technical reviewe
 | Main languages | Python, SQL |
 | Common tools | Pandas, Scikit-learn, Streamlit, Plotly, Jupyter |
 | Goal | Demonstrate technical reasoning, organization, and delivery capability |
+
+## At a glance
+
+| Signal | Value |
+|---|---|
+| Scope | From fundamentals to applied portfolio projects |
+| Output | Notebooks, apps, dashboards, and reports |
+| Strength | Broad coverage across data and AI |
+| Audience | Recruiters, reviewers, and technical peers |
 
 ## What you will find here
 
@@ -130,4 +146,3 @@ The portfolio continues to evolve with:
 | GitHub | CostaPaiiva |
 | LinkedIn | Coming soon |
 | Portfolio | In progress |
-

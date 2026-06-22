@@ -2,6 +2,21 @@
 
 Colecao de notebooks basicos de Machine Learning.
 
+<p>
+  <img alt="Python" src="https://img.shields.io/badge/Python-Notebooks-blue">
+  <img alt="Jupyter" src="https://img.shields.io/badge/Jupyter-Study%20Base-orange">
+  <img alt="ML" src="https://img.shields.io/badge/Machine%20Learning-Fundamentals-success">
+</p>
+
+## At a glance
+
+| Signal | Value |
+|---|---|
+| Focus | Foundational supervised learning exercises |
+| Main stack | Jupyter, Python, scikit-learn |
+| Output | Study notebooks and small data examples |
+| Strength | Clear progression through ML basics |
+
 ## Projetos
 
 | Pasta | Tema | Arquivo principal |

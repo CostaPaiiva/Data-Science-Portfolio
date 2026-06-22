@@ -2,6 +2,22 @@
 
 Sistema Streamlit para treinar modelos de Machine Learning a partir de CSV usando PyCaret.
 
+<p>
+  <img alt="Python" src="https://img.shields.io/badge/Python-3.10%2B-blue">
+  <img alt="Streamlit" src="https://img.shields.io/badge/Streamlit-App-red">
+  <img alt="PyCaret" src="https://img.shields.io/badge/PyCaret-AutoML-orange">
+  <img alt="ML" src="https://img.shields.io/badge/Machine%20Learning-Workflow-success">
+</p>
+
+## At a glance
+
+| Signal | Value |
+|---|---|
+| Focus | Automated model comparison and training |
+| Main stack | Streamlit, PyCaret, scikit-learn |
+| Output | Best pipeline, PDF report, prediction app |
+| Strength | Fast model prototyping from CSV input |
+
 ## O que faz
 
 - Upload de CSV.

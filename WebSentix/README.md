@@ -2,6 +2,22 @@
 
 Aplicacao FastAPI para analise de sentimento em portugues a partir de texto, URLs e arquivos.
 
+<p>
+  <img alt="Python" src="https://img.shields.io/badge/Python-3.10%2B-blue">
+  <img alt="FastAPI" src="https://img.shields.io/badge/FastAPI-Web%20App-red">
+  <img alt="NLP" src="https://img.shields.io/badge/NLP-Sentiment-orange">
+  <img alt="Jinja2" src="https://img.shields.io/badge/Jinja2-Templates-success">
+</p>
+
+## At a glance
+
+| Signal | Value |
+|---|---|
+| Focus | Sentiment analysis and text extraction |
+| Main stack | FastAPI, Jinja2, NLP services |
+| Output | Sentiment score, summaries, exports |
+| Strength | Practical web app for text analytics |
+
 ## Funcionalidades
 
 - Analise de texto manual.

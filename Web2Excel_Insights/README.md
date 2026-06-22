@@ -2,6 +2,22 @@
 
 Aplicacao Streamlit para coletar conteudo de paginas web e exportar insights em CSV ou Excel.
 
+<p>
+  <img alt="Python" src="https://img.shields.io/badge/Python-3.10%2B-blue">
+  <img alt="Streamlit" src="https://img.shields.io/badge/Streamlit-App-red">
+  <img alt="Web" src="https://img.shields.io/badge/Web%20Extraction-Insights-orange">
+  <img alt="Excel" src="https://img.shields.io/badge/Excel-Export-success">
+</p>
+
+## At a glance
+
+| Signal | Value |
+|---|---|
+| Focus | Web content extraction and export |
+| Main stack | Streamlit, requests, spaCy, pandas |
+| Output | CSV and Excel insights |
+| Strength | Turns web pages into structured outputs |
+
 ## Funcionalidades
 
 - Entrada de multiplas URLs.

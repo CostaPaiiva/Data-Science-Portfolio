@@ -2,6 +2,22 @@
 
 Dashboard Streamlit para analise automatica de datasets CSV.
 
+<p>
+  <img alt="Python" src="https://img.shields.io/badge/Python-3.10%2B-blue">
+  <img alt="Streamlit" src="https://img.shields.io/badge/Streamlit-Dashboard-red">
+  <img alt="Plotly" src="https://img.shields.io/badge/Plotly-Visuals-6f42c1">
+  <img alt="Data Quality" src="https://img.shields.io/badge/Data%20Quality-Automated-success">
+</p>
+
+## At a glance
+
+| Signal | Value |
+|---|---|
+| Focus | Automatic CSV profiling and insights |
+| Main stack | Streamlit, Plotly, Python |
+| Output | Quality metrics, charts, and reports |
+| Strength | Quick data diagnosis before analysis |
+
 ## Funcionalidades
 
 - Upload de CSV com leitura inteligente.
