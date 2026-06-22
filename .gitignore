@@ -1,0 +1,19 @@
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Test and notebook artifacts
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Common local files
+.DS_Store
+Thumbs.db
+
