@@ -107,7 +107,7 @@ or:
 python run.py
 ```
 
-## Recruiter highlights
+## highlights
 
 - Clear project organization with a fast-read structure
 - Mix of data, AI, automation, and web applications
