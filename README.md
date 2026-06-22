@@ -1,183 +1,133 @@
-📊 Data Science Projects
+# Data Science Projects
 
-##🚀 Sobre o Repositório
+Technical portfolio of projects in Data Science, Machine Learning, Artificial Intelligence, Computer Vision, and Python automation.
 
-Este repositório reúne meus projetos práticos nas áreas de Ciência de Dados, Análise de Dados, Machine Learning, Inteligência Artificial, Visão Computacional, Processamento de Dados e Automação com Python.
+The repository is organized to make it easy for recruiters and technical reviewers to scan the work, understand the scope of each project, and evaluate the quality of the documentation.
 
-O objetivo deste portfólio é apresentar minha evolução técnica por meio de projetos aplicados, organizados e documentados. Cada projeto foi desenvolvido com foco em resolver problemas práticos, explorar dados, construir modelos, automatizar processos e transformar informações em soluções úteis.
+## Overview
 
-Este repositório também funciona como uma vitrine profissional, permitindo que recrutadores, avaliadores técnicos e outros profissionais conheçam minhas habilidades, minha forma de organizar projetos e minha capacidade de aplicar tecnologia em cenários reais.
+| Item | Description |
+|---|---|
+| Focus | Practical projects in data, AI, and automation |
+| Main languages | Python, SQL |
+| Common tools | Pandas, Scikit-learn, Streamlit, Plotly, Jupyter |
+| Goal | Demonstrate technical reasoning, organization, and delivery capability |
 
-##🎯 Objetivo do Portfólio
+## What you will find here
 
-O principal objetivo deste portfólio é demonstrar, de forma prática, minhas competências em dados e inteligência artificial.
+- Foundation projects focused on learning and experimentation
+- Web interfaces and data processing solutions
+- Supporting materials, reports, and notebooks
+- Examples of automation, computer vision, and NLP
 
-Aqui estão reunidos projetos que mostram minha capacidade de:
+## Repository structure
 
-Trabalhar com dados estruturados e não estruturados;
-Realizar limpeza, tratamento e organização de dados;
-Criar análises exploratórias;
-Desenvolver modelos de Machine Learning;
-Automatizar tarefas repetitivas com Python;
-Trabalhar com visão computacional;
-Processar arquivos, textos, imagens e informações da web;
-Criar soluções orientadas a dados;
-Documentar projetos de forma clara e profissional;
-Organizar um portfólio técnico para apresentação no GitHub.
-
-##🧠 Áreas de Estudo e Aplicação
-
-Os projetos deste repositório estão relacionados principalmente às seguintes áreas:
-
-Ciência de Dados
-Análise de Dados
-Machine Learning
-Inteligência Artificial
-Visão Computacional
-Automação de Processos
-Processamento de Dados
-Análise de Texto
-Extração de Informações
-Desenvolvimento de Soluções com Python
-
-## 📁 Estrutura do Repositório
-
-Os projetos foram organizados por nível de complexidade, facilitando a navegação e a análise do portfólio.
 ```text
 Data-Science-Projects/
-├── A-Projetos-basicos/
-│   ├── FabricadeModelosML/
-│   ├── FastVision/
-│   ├── InsightMind/
-│   ├── Machine_Learning/
-│   ├── Visao_computacional/
-│   ├── Web2Excel_Insights/
-│   └── WebSentix/
-│
-├── B-Projetos-intermediarios/
-│   └── AutoML/
-│
-├── C-Projetos-avancados/
-│   └── Em breve...
-│
+├── FabricadeModelosML/
+├── FastVision/
+├── InsightMind/
+├── Machine_Learning/
+├── Visao_computacional/
+├── Web2Excel_Insights/
+├── WebSentix/
 └── README.md
 ```
-##📁 Organização por Nível
 
-🟢 Projetos Básicos
+## Projects
 
-A pasta Basicos contém projetos voltados para fundamentos de análise de dados, manipulação de arquivos, automações, visão computacional, modelos iniciais de Machine Learning e processamento de informações com Python.
+| Project | Area | Summary |
+|---|---|---|
+| `FabricadeModelosML` | Machine Learning | Model training and comparison pipeline with saved artifacts |
+| `FastVision` | Computer Vision | Image processing solution with face/object detection focus |
+| `InsightMind` | AI and data analysis | App for exploring data and generating insights with automation support |
+| `Machine_Learning` | Supervised learning | Notebook collection with practical ML studies |
+| `Visao_computacional` | Computer Vision | Study base and experiments in the field |
+| `Web2Excel_Insights` | Extraction and automation | Web data collection and insights/export generation |
+| `WebSentix` | NLP and web app | Web app for sentiment analysis on text |
 
-Esses projetos demonstram minha base técnica, minha familiaridade com bibliotecas importantes do ecossistema de dados e minha capacidade de criar soluções simples, organizadas e funcionais.
+## Technical profile demonstrated
 
-Projetos incluídos nesta categoria:
+| Skill | Evidence in the repository |
+|---|---|
+| Data handling | Pandas usage, cleaning, transformation, and preparation |
+| Machine Learning | Supervised models, performance comparison, and evaluation |
+| Visualization | Dashboards and charts with Streamlit and Plotly |
+| Automation | Scripts for processing, ingestion, and export |
+| Project architecture | Directory structure, documentation, and modular organization |
+| NLP and text | Text processing and sentiment analysis in `WebSentix` |
+| Computer vision | Image-based experiments and applications |
 
-FabricadeModelosML
-FastVision
-InsightMind
-Machine_Learning
-Visao_computacional
-Web2Excel_Insights
-WebSentix
+## Most used technologies
 
-🟡 Projetos Intermediários
+| Category | Technologies |
+|---|---|
+| Language | Python |
+| Data | Pandas, NumPy |
+| Machine Learning | Scikit-learn |
+| Interface | Streamlit, Dash |
+| Visualization | Plotly, Matplotlib |
+| Artifacts | CSV, JSON, PKL |
+| Environment | Jupyter, virtualenv, Docker in some projects |
 
-A pasta Intermediarios reúne projetos com maior organização técnica, mais etapas de processamento, maior estrutura de código e aplicação mais completa de conceitos de Machine Learning e automação.
+## How to navigate
 
-Esses projetos têm como objetivo demonstrar evolução na construção de soluções mais reutilizáveis, organizadas e próximas de aplicações reais.
+1. Choose a project folder in the repository root.
+2. Open that project’s `README.md` to understand the goal.
+3. Review the source code, notebooks, and generated artifacts.
+4. Use reports and sample data as a fast reference.
 
-Projeto incluído nesta categoria:
+## General requirements
 
-AutoML
+Requirements vary by project, but usually include:
 
-🔴 Projetos Avançados
+- Python 3.10+
+- `pip` or a virtual environment
+- Dependencies listed in `requirements.txt`
 
-A pasta Avancados está reservada para projetos mais robustos, envolvendo aplicações completas com dados, inteligência artificial, dashboards, modelos avançados, deploy de soluções e sistemas mais próximos de ambientes reais.
+## How to run a project
 
-Esta seção será atualizada futuramente com projetos de maior complexidade técnica.
+Each folder has its own instructions. In general:
 
-##🛠️ Tecnologias e Ferramentas
+```bash
+python -m venv .venv
+.venv\Scripts\activate
+pip install -r requirements.txt
+```
 
-As principais tecnologias utilizadas nos projetos incluem:
+Then run the main script of the chosen project, for example:
 
-Além dessas ferramentas, os projetos também envolvem conceitos como:
+```bash
+streamlit run app.py
+```
 
-Limpeza e tratamento de dados;
-Análise exploratória;
-Visualização de dados;
-Treinamento de modelos;
-Avaliação de desempenho;
-Automação com scripts Python;
-Processamento de imagens;
-Organização de arquivos e dados;
-Documentação técnica;
-Versionamento com Git.
+or:
 
-##📌 Competências Demonstradas
+```bash
+python run.py
+```
 
-Este portfólio demonstra competências práticas importantes para atuação em projetos de dados e tecnologia, como:
+## Recruiter highlights
 
-Organização de projetos profissionais no GitHub;
-Estruturação de pastas por nível de complexidade;
-Escrita de documentação clara;
-Uso de Git e GitHub para versionamento;
-Manipulação de dados com Python;
-Limpeza e preparação de dados;
-Análise exploratória;
-Criação de modelos de Machine Learning;
-Interpretação de métricas;
-Automação de processos;
-Processamento de imagens;
-Análise de textos;
-Extração de informações;
-Desenvolvimento de soluções orientadas a dados.
+- Clear project organization with a fast-read structure
+- Mix of data, AI, automation, and web applications
+- Delivery with documentation and reproducible artifacts
+- Projects that show technical growth and stack breadth
 
-##🧩 Como Navegar pelo Repositório
+## Next steps
 
-Para explorar os projetos, escolha uma das pastas principais:
+The portfolio continues to evolve with:
 
-Basicos: projetos iniciais e fundamentais;
+- new projects
+- refactoring
+- documentation improvements
+- visual and structural standardization
 
-Intermediarios: projetos com maior estrutura técnica;
+## Contact
 
-Avancados: projetos futuros de maior complexidade.
+| Channel | Value |
+|---|---|
+| GitHub | CostaPaiiva |
+| LinkedIn | Coming soon |
+| Portfolio | In progress |
 
-Cada projeto possui sua própria estrutura de arquivos, códigos e documentação específica. A ideia é que cada pasta funcione como um projeto independente dentro de um portfólio maior.
-
-##📈 Evolução Técnica
-
-Este repositório representa minha jornada de aprendizado e prática em Ciência de Dados, Análise de Dados, Machine Learning e Inteligência Artificial.
-
-A organização por níveis permite acompanhar minha evolução desde projetos mais simples até soluções mais completas. Ao longo do tempo, este portfólio será atualizado com novos projetos, melhorias nos códigos, documentação mais detalhada e aplicações mais avançadas.
-
-##👨‍💻 Sobre Mim
-
-Sou desenvolvedor e profissional em formação na área de tecnologia, com foco em soluções baseadas em dados, inteligência artificial, automação e desenvolvimento de software.
-
-Tenho interesse em construir projetos práticos, organizados e úteis, aplicando conhecimento técnico para resolver problemas reais e gerar valor por meio da tecnologia.
-
-Minhas principais áreas de interesse são:
-
-Ciência de Dados;
-Análise de Dados;
-Engenharia de Dados;
-Machine Learning;
-Inteligência Artificial;
-Automação com Python;
-Desenvolvimento de Software.
-
-##🎯 Objetivo Profissional
-
-Meu objetivo é atuar em projetos que envolvam dados, inteligência artificial, automação e desenvolvimento de soluções tecnológicas.
-
-Busco oportunidades onde eu possa aplicar meus conhecimentos, continuar evoluindo tecnicamente e contribuir com soluções que transformem dados em informação, informação em insight e insight em tomada de decisão.
-
-##📫 Contato
-GitHub: CostaPaiiva
-Portfólio: em desenvolvimento
-LinkedIn: em breve
-🔄 Status do Repositório
-
-##🚧 Repositório em constante evolução.
-
-Novos projetos, melhorias de documentação, refatorações e aplicações mais avançadas serão adicionados progressivamente.
